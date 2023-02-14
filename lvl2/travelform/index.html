@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Macias Travel Form</title>
+</head>
+<body id="container">
+    <h1 class="h1">Welcome to Macias Airlines</h1>
+    <h3 class="h3">Welcome to Macias Airlines Please fill out Form 11 (Passenger Information)</h3>
+    <form id="airlineForm">
+        <input type="text" name="firstName">
+        <label for="">First Name</label>
+        <br>
+        <input type="text" name="lastName">
+        <label for="">Last Name</label>
+        <br>
+        <input type="digit" name="age">
+        <label for="">Age</label>
+        <br>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="gender" value="other" id="other">
+        <label for="other">other</label>
+        <br>
+        <select name="location">
+            <option value="none">None</option>
+            <option value="phoenix">Phoenix</option>
+            <option value="dallas">Dallas</option>
+            <option value="tampa">Tampa</option>
+            <option value="new york">New York</option>
+            <option value="seattle">Seattle</option>
+        </select>
+        <label for="">Where are you Traveling too?</label>
+        <br>
+        <label for="diet">What are your Dietary Restrictions ?</label>
+        <br>
+        <input class="diet" type="checkbox" name="diet" id="dairyFree" value="dairyFree">
+        <label for="vegan">Dairy-free</label>
+        <br>
+        <input class="diet" type="checkbox" name="diet" id="gluten" value="glutenFree">
+        <label for="gluten">Gluten-free</label>
+        <br>
+        <input class="diet" type="checkbox" name="diet" id="vegetarian" value="vegetarian">
+        <label for="paleo">vegetarian</label>
+        <br>
+        <button type="button" id="submit">Submit</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

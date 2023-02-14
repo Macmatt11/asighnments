@@ -7,52 +7,41 @@ const inputValue = form.title.value
 
 //create li from inputs
 function createLi(){
-   const li = document.createElement("li");
+   const li = document.createElement("li"); //creates li under the ul tag
     uList.appendChild(li)
-    const div = document.createElement("div");
-    div.textContent = input.value
+    const div = document.createElement("div");// creates child node to li
+    div.textContent = input.value             // makes divs text content equal to whatever is inputed 
     div.setAttribute("id","div")
-    const editBtn = document.createElement("button");
+    const editBtn = document.createElement("button");//creates edit button as a child to li 
     editBtn.textContent = "edit"
     editBtn.setAttribute("id","edButton")
-    const xBtn = document.createElement("button");
+    const xBtn = document.createElement("button"); // creates "X" button as child to li 
     xBtn.textContent = "X"
     xBtn.setAttribute("id","xButton");
-    xBtn.addEventListener("click",() => {
+    //xbtn
+    xBtn.addEventListener("click",() => {    //function removes the whole li and children when the delete button is pressed 
      uList.removeChild(li)
     });
-    editBtn.addEventListener("click",(event) => {
-        if ( editBtn.textContent === "edit"){
-     const editBox = document.createElement("input");
+    //editbtn
+    editBtn.addEventListener("click",(event) => { // creates another input box when the edit button is clicked 
+      const editBox = document.createElement("input")
+      if ( editBtn.textContent === "edit"){
     li.appendChild(editBox)
-     editBox.textContent = div.value
-     editBtn.textContent = "save";
-}  else if (editBtn.textContent === "save"){
+     editBox.value = div.textContent // sets divs text content equal to whatever the edit input content is
+     editBtn.textContent = "save";// changes the text on button from edit to save 
+     //save btn
+}  else if (editBtn.textContent === "save"){        //when buttons text content is saved 
     console.dir(event.target.parentNode.childNodes)
-    const editBox = event.target.parentNode.childNodes[3]
-   div.textContent = editBox.value;
-           li.removeChild(editBox)
-           editBox.textContent = "edit";
+    console.log(event.target.parentNode.childNodes)
+    const editBox = event.target.parentNode.childNodes[3] // this targets the childnode of the input and saves info
+   div.textContent = editBox.value; 
+           li.removeChild(editBox) // removed the edit input 
+           editBtn.textContent = "edit"; // changes txt of button back to edit 
 }
 
 });
-
-
-
-
-
- //} else if (button.textContent === "save"){
-          // const divBox = document.getElementById("div");
-           //const editBox = document.getElementById("editBox");
-           //divBox.textContent = editBox.value;
-           //li.removeChild(editBox)
-           //button.textContent = "edit";
-
-
-        //}
-            
-        
-    li.appendChild(div);
+    
+    li.appendChild(div);  //appends the div,button, and xbtn to li as children 
     li.appendChild(editBtn);
     li.appendChild(xBtn)
 
@@ -62,15 +51,12 @@ return li
 
 }
 
-
-
-
 //submit data
 
-form.addEventListener("submit",(event) => {;
+form.addEventListener("submit",(event) => {; // when submit is clicked the function of creating li occurs 
     event.preventDefault();
     const li = createLi();
-    input.value = "";
+    input.value = "";        // removes txt from inside input box 
     uList.appendChild(li);
    
 })
@@ -87,7 +73,15 @@ form.addEventListener("submit",(event) => {;
 
 
 
+//} else if (button.textContent === "save"){
+          // const divBox = document.getElementById("div");
+           //const editBox = document.getElementById("editBox");
+           //divBox.textContent = editBox.value;
+           //li.removeChild(editBox)
+           //button.textContent = "edit";
 
+
+        //}
 
 
 

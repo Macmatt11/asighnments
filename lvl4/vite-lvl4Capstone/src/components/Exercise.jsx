@@ -62,9 +62,9 @@ console.dir("addedexercise" + addedExercises)
     const exerciseElements = apiExercise.map((exercise,index)=>(
         <div key={index}>
             <img src={exercise.image}/>
-            <h3>{exercise.name}</h3>
-            <h4>{exercise.muscleTarget}</h4>
-            <h4>{exercise.equipmentUsed}</h4>
+            <h3>Exercise: {exercise.name}</h3>
+            <h4>Targeted Muscle: {exercise.muscleTarget}</h4>
+            <h4>Equipment Type: {exercise.equipmentUsed}</h4>
         </div>
     ))
 

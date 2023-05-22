@@ -12,7 +12,7 @@
 const form = document.getElementById("mainForm");
 let runningTotal = 0;
     
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event)=> {
 event.preventDefault();
 const goomsInput = parseInt(document.getElementById('gooms').value);
 const bobsInput = parseInt(document.getElementById('bobs').value);

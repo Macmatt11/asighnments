@@ -1,0 +1,36 @@
+.appContainer{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-auto-flow: 100px;
+}
+
+textarea{
+    width: 400px;
+    height: 100px;
+}
+
+.colorBoxes{
+    border:2px solid black;
+    grid-column: 2/3;
+    grid-row: 2/4
+}
+
+.mainTitle{
+grid-column: 2/4;
+text-align: center;
+}
+
+.gradientBox{
+    width: 406px;
+    height: 105px;
+}
+
+.form{
+grid-column: 3/4;
+grid-row: 2/4;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:space-evenly;
+border: 2px solid black;
+}

@@ -81,10 +81,10 @@ const peopleArray = [
 for(i = 0; i < peopleArray.length; i++){
        if( i % 2 === 0){
               peopleName.push(peopleArray[i].name);
-                     console.log(peopleName);
+                    console.log(peopleName);
        } if (i % 2 !== 0){
                      peopleJob.push(peopleArray[i].occupation);
-                            console.log(peopleJob)
+                           console.log(peopleJob)
 
        }
        

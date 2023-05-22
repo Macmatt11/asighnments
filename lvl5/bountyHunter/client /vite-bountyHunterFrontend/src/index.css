@@ -1,0 +1,76 @@
+
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  }
+  
+  h3{
+    margin: 5px;
+  }
+  
+  h2{
+    margin: 5px;
+  }
+  
+  .bountyContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+  }
+  
+  .bountyBox{
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  /* input css */
+  form{
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin: 5px;
+  }
+  
+  button{
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .delete-btn{
+    background-color: #D74E09;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .delete-btn:hover{
+    background-color: #2EC4B6;
+  }
+  
+  .edit-btn{
+    background-color: #20A4F3;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .edit-btn:hover{
+    background-color: #2EC4B6;
+  }
+
+  .submit-btn{
+    background-color:#52489C;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .submit-btn:hover{
+    background-color: #2EC4B6;
+  }

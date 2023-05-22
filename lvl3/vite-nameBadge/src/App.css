@@ -1,0 +1,20 @@
+h1{
+  background-color: rgba(96, 9, 9, 0.873);
+  color:rgb(225, 229, 225);
+  margin: 0;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 14px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+  margin: 0;
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29taWMlMjBib29rc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+}
+
+span{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}

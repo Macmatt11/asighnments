@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(18, 102, 102);
+}
+
+.cardList{
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}

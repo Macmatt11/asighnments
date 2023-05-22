@@ -36,11 +36,13 @@ function App() {
       <Routes>
         <Route path= '/' element = {<Home/>} />
         <Route path= '/exercises' element = {<Exercise/>} />
-        <Route path= 'myWorkouts' element = {<MyWorkouts/>} />
-        <Route path= 'login' element = {<Login/>} />
+        <Route path= '/myWorkouts' element = {<MyWorkouts/>} />
+        <Route path= '/login' element = {<Login/>}/>
+        <Route path= '/myWorkouts/:myWorkoutId' element = {<MyWorkoutDetails/>} />
       </Routes>
-      <Footer/>
+        <Footer/>
     </Router>
+
   )
 }
 

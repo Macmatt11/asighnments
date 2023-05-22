@@ -10,19 +10,19 @@ let countClicks = 1
 const clickCounter = document.getElementById('clicksDisplayed')
 
 document.addEventListener('click', function(){
-clickCounter.innerHTML = countClicks++;
+clickCounter.innerHTML = countClicks++; //this is setting the div elements contents equal to whatever the click count is. the ++ means that we are incrrementing 
 console.log(clickCounter);
 console.log( countClicks)
-sessionStorage.setItem('userClicks', countClicks);
+sessionStorage.setItem('userClicks', countClicks); // storing the click counts as a seeion so when user refresshes the content is still there 
 });
 
 //get stored 
 
-window.onload = function() {
-    let storedUserClicks = sessionStorage.getItem('userClicks');
-    if (storedUserClicks) {
-      countClicks = storedUserClicks;
-      clickCounter.innerHTML  = countClicks;
+window.onload = function() {  // when the window is refreshed it will automatically run this function
+    let storedUserClicks = sessionStorage.getItem('userClicks'); // gets the stored info of the user 
+    if (storedUserClicks) {    // if there are stored clicks then run this code 
+      countClicks = storedUserClicks;  // the user clicks  counted equal the stored user clicks 
+      clickCounter.innerHTML  = countClicks; 
     }
   };
 

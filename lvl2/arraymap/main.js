@@ -62,13 +62,13 @@
 
 //3) Capitalize the first letter of each name and make the rest of the characters lowercase
 
-// function capitalizeNames(arr){
-//   return arr.map(function(name){
-//     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()   // charAt() method returns the character at the specified index in a string
-//     // had to cut the string after index 0 and lowercase everything after the fist letter. this is why string was used. 
-//   })
-//   }
-//   console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+function capitalizeNames(arr){
+  return arr.map(function(name){
+    return name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase()   // charAt() method returns the character at the specified index in a string
+    // had to cut the string after index 0 and lowercase everything after the fist letter. this is why string was used. 
+  })
+  }
+  console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 
 
 //  function capitalizeNames(arr){
@@ -172,36 +172,36 @@
 //     }
 // )
 // };
-function readyToPutInTheDOM(arr){
-    return arr.map(user => '<h1>' + user.name + '</h1>' + '<h2>' + user.age + '</h2>')
-}
-console.log(readyToPutInTheDOM([
-    {
-        name: "Angelina Jolie",
-        age: 80
-    },
-    {
-        name: "Eric Jones",
-        age: 2
-    },
-    {
-        name: "Paris Hilton",
-        age: 5
-    },
-    {
-        name: "Kayne West",
-        age: 16
-    },
-    {
-        name: "Bob Ziroll",
-        age: 100
-    }
-]));
-// ["<h1>Angelina Jolie</h1><h2>80</h2>",
-// "<h1>Eric Jones</h1><h2>2</h2>",
-// "<h1>Paris Hilton</h1><h2>5</h2>",
-// "<h1>Kayne West</h1><h2>16</h2>",
-// "<h1>Bob Ziroll</h1><h2>100</h2>"]
+// function readyToPutInTheDOM(arr){
+//     return arr.map(user => '<h1>' + user.name + '</h1>' + '<h2>' + user.age + '</h2>')
+// }
+// console.log(readyToPutInTheDOM([
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]));
+// // ["<h1>Angelina Jolie</h1><h2>80</h2>",
+// // "<h1>Eric Jones</h1><h2>2</h2>",
+// // "<h1>Paris Hilton</h1><h2>5</h2>",
+// // "<h1>Kayne West</h1><h2>16</h2>",
+// // "<h1>Bob Ziroll</h1><h2>100</h2>"]
 
 
 

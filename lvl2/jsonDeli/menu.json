@@ -1,0 +1,83 @@
+{
+    "appetizers": [
+        {
+            "name": "potato wedges",
+            "ingredients": ["fresh idaho potatoes", "avocado oil", "cajun seasoning","guda cheese based sause"],
+            "description": "freshly chopped idaho potatoes that are fried until golden brown and delicously seasoned with cajun style seasoning and served with a side of mouth watering guda cheese dip "
+        },
+        {
+            "name": "jalepeno avocado chips",
+            "ingredients": ["crinkle-cut idaho potatoe ", "avocado oil", "salt", "jalapeno seasoning"],
+            "description": "crinkle-cut idaho potatoes that are fried until crispy in avocado oil and beautifly seasoned with salt and jalapeno seasoning"
+        },
+        {
+            "name": "chicken noodle soupe",
+            "ingredients": ["carrots","diced celery", "vegan butter", "fresh garlic", "chicken broth","salt", "pepper", "rosemary"," sage","red pepper","homemade noodles","chicken"],
+            "description": "savory chicken noodle soup made with locally sourced vegetables, handmade pasta, homemade chicken broth and free range organic chicken all combined to make a nostalgic soup"
+        }
+    ],
+    "cold Sandwiches": [
+        {
+            "name": "tuna no crust",
+            "ingredients": ["White Albacore Tuna", "Dill Pickles", "shredded Lettuce", "fresh Tomato", "Red Onion", "toasted Sourdough"],
+            "description": "paying homage to the american classic The Fast and the Furious, this delicious sandwich consists of White Albacore Tuna, Dill Pickles, shredded Lettuce, fresh Tomato and Red Onion on Sourdough with the crust cut off."
+        },
+        {
+            "name": "turkey Jack",
+            "ingredients": ["roasted turkey", "shredded Lettuce", "pepper-jack cheese", "roma tomato", "dill pickle", "spicy mayo", "sourdough bread"],
+            "description": "Roasted Turkey breast, shredded Lettuce, Pepper-jack cheese, fresh roma Tomato, Dill Pickles and a drizzle of signature Spicy Mayo on Sourdough bread."
+        },
+        {
+            "name": "classic BLT",
+            "ingredients":[" Applewood smoked bacon", "shredded iceberg lettuce","roma tomato"],
+            "description": "This classic is served with freshly grilled Applewood smoked bacon, shredded iceberg lettuce and perfectly ripened tomatoes,"
+        }
+    ],
+    "hot Sandwiches":[
+        {
+            "name": "The mighty Breakfast",
+            "ingredients": ["Everything Bagel", "bacon", "turkey sausage", "egg","cheddar cheese", "pesto"],
+            "description": "A MUST TRY! Everything Bagel stacked with Bacon, turkey sausage, Egg, Cheddar Cheese and fresh pesto"
+        },
+        {
+            "name": "spicy Senorita",
+            "ingredients": ["Sourdough"," Jalapeno Cream Cheese","sliced Turkey", "sliced Tomatoes", "Red Onion", "Green Peppers","Banana Peppers","salt and pepper"],
+            "description": "This one is a mean one! Lightly toasted Sourdough, spread with Jalapeno Cream Cheese, layered with Turkey, sliced Tomatoes, Red Onion, Green Peppers, Banana Peppers, and a dash of salt and pepper."
+        },
+        {
+            "name":"Italian Stallion",
+            "ingredients": ["pit ham", "salami", "sliced turkey", "provolone", "lettuce"," tomatoes", "red onion","Banana Peppers", "italian dressing", "mayo", "mustard", "french roll"],
+            "description": "Pit Ham, Salami, Roasted Turkey, Provolone, Lettuce, Tomatoes, Red Onion, Banana Peppers, Italian Dressing with mayonnaise and mustard. Served on a French Roll."
+        },
+        {
+            "name": "Philly",
+            "ingredients": ["steak", "red peppers", "onions", "white american chesse", "french roll"],
+            "description": "The Philly cheesesteak is the real deal. It's grilled fresh to order with tender steak, peppers, onions, and white American cheese served in a beautiful french roll "
+        }
+    ],
+    "desserts":[
+        {
+            "name": "fudge brownie",
+            "ingredients": ["dark chocolate", "sugar", "eggs", "vanilla extract", "flour", "cocoa powder", "salt"],
+            "description": "the fudge brownie of your dreams"
+        },
+        {
+            "name":"coffe addict",
+            "ingredients": ["coffee powder", "flour", "sugar", "butter", "egg","chocolate chunks"],
+            "description":"ther perfect cookie for the coffee adict in your life!It’s strong, stimulating, and simply delish. "
+        }
+
+    ],
+    "drinks":[
+        {
+            "name": "fountain drinks",
+            "ingredients":["coke", "pepsi","sprite", "dr.pepper", "water"],
+            "description": "our fountain drinks consist of coke, pepsi, sprite, dr.pepper and of course the most important water "
+        },
+        {
+            "name": "alcoholic beverages",
+            "ingredients": ["bud light", "coors light", "modelo","heineken", "dos x's"],
+            "description": "we carry a variety of beers like bud light, coors light, modelo, heineken, and dos x's"
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* form styling */
+.mainInputDiv{
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+align-content: center;
+gap: 50px
+}
+
+form{
+border: 2px solid yellow;
+background-color: rgba(196, 193, 193, 0.671);
+display:grid;
+grid-template-columns: repeat(2,1fr);
+grid-auto-rows: 60px;
+height:400px;
+width:950px;
+border-radius: 20px;
+margin-top: 70px;
+margin-left: 15%;
+}
+
+input{
+  border: 2px solid black;
+  height:30px;
+  width:300px;
+  margin-left: 15%;
+  position: relative;
+  top:30px;
+  margin-top: 0;
+}
+
+button{
+  width:90px;
+  height: 30px;
+  border-radius: 5px;
+
+}
+/* badge styling */
+.badgeDiv{
+  border: 2px solid yellow;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: repeat(100px);
+  width:400px;
+  height: 400px;
+  grid-column: 2/3;
+  grid-row: 8/9;
+  margin-left: 35%;
+}
+
+.single{
+  border: 2px solid yellow;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: repeat(100px);
+  width:400px;
+  height: 400px;
+  grid-column: 2/3;
+  grid-row: 8/9;
+  margin-left: 35%;
+  background-color: rgba(245, 245, 245, 0.945);
+  border-radius: 10px;
+}
+
+.multiple{
+  border: 2px solid yellow;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: repeat(100px);
+  width:400px;
+  height: 400px;
+  grid-column: 2/3;
+  grid-row: 8/9;
+  background-color: rgba(245, 245, 245, 0.945);
+  border-radius: 10px;
+}
+
+
+
+.idTitle{
+grid-column: 1/-1;
+background-color: rgba(214, 120, 12, 0.627);
+margin-top: 0;
+padding-top: 5px;
+padding-left: 4px;
+}
+h4{
+  font-size: 13px;
+}
+
+.badgeName{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 0 0 0 20px;
+}
+
+.badgeBirth{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0 0 0 20px;
+}
+
+.badgeEmail{
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin: 0 0 0 20px;
+
+}
+
+.badgePwr{
+  grid-column: 3/-1;
+  grid-row:3/4;
+  margin: 0 20px 0 0;
+}
+
+.badgePhone{
+  grid-column: 3/-1;
+  grid-row:2/3;
+  margin: 0 20px 0 0;
+}
+
+p{
+  grid-column: 1/-1;
+  grid-row:5/8;
+  border: 2px solid black;
+  height:100px;
+  margin: 0 20px 0 20px
+}
+
+.badgeList{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 70px;
+}
+
+/* input styling  */
+
+.firstNameInput{
+  margin-left: 20%;
+}
+
+
+
+.birthPlaceInput{
+  margin-left: 20%;
+}
+
+
+
+.emailInput{
+  margin-left: 20%;
+}
+
+
+
+.commentBox{
+grid-column: 1/-1;
+grid-row: 4/5;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 30px;
+height:80px
+}
+
+.submitbtn{
+grid-column: 1/-1;
+grid-row: 5/6;
+margin-top: 70px;
+margin-left: 38%;
+
+}
+
+.clearBtn{
+  grid-column: 2/-1;
+  grid-row: 5/6;
+  margin-top: 70px;
+  margin-left: 5%;
+}

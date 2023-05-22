@@ -1,0 +1,23 @@
+body{
+  background-image: 
+  url("https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80");
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+
+}
+
+
+.boxes{
+  border: 3px solid white;
+  height: 200px;
+  width: 200px;
+  display:inline-block;
+  margin: 5px;
+  position: relative;
+  left:2%;
+  background-color: white;
+  opacity: .7;
+}
+
+
+

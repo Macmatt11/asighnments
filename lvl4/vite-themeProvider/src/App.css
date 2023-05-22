@@ -1,0 +1,13 @@
+#appContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.light2Mode{
+  background-color: #D7D9D7;
+  }
+  
+  .dark2Mode{
+  background-color: #3E363F;
+  }

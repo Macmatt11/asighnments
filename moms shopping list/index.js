@@ -22,7 +22,7 @@ function createLi(){
     xBtn.addEventListener("click",() => {    //function removes the whole li and children when the delete button is pressed 
      uList.removeChild(li)
     });
-    //editbtn
+    //editbtnbb
     editBtn.addEventListener("click",(event) => { // creates another input box when the edit button is clicked 
       const editBox = document.createElement("input")
       if ( editBtn.textContent === "edit"){

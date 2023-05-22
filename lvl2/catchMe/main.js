@@ -2,9 +2,7 @@
 //Throw an error if either argument is not of the data type number:
 // non number data types are strings, booleans or arrays and objects 
 
-//function sum ( num 1, num 2) is returning num1 + num2 
-// inside of function a try {} and catch is needed 
-//finally is needed 
+
 
 //function sum(x, y){
     // if(Number.isInteger(x) && Number.isInteger(y)){
@@ -53,7 +51,7 @@ if (username !== "sam" || password !== "123abc"){
 //credentials, and in another use incorrect ones
 
 try{
-login("sa","123abc")
+login("sam","123abc")
 }
 catch(err){
     console.log(err)

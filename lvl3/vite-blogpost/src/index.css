@@ -1,0 +1,243 @@
+body{
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0;
+  border: 0;
+}
+
+/* nav bar */
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.circle{
+  position: relative;
+  background-color: black;
+}
+
+nav:hover{
+  position: relative;
+  color:black;
+  opacity: .6;
+  
+}
+
+
+.ulNav{
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 15%;
+}
+
+.ulNav > li{
+padding: 10px;
+font-size: 12px;
+font-weight: 700;
+
+}
+
+a{
+  text-decoration:none;
+  color: white;
+}
+
+
+
+.titleContainer{
+  margin-left: 10%;
+  text-align: center;
+}
+
+.startTitle{
+position: relative;
+font-size: 20px;
+bottom: 12px;
+}
+
+/* header  */
+.header{
+  position: relative;
+  height: 530px;
+  background-size: 100%;
+  background-position: 10% 60%;
+  background-repeat: no-repeat;
+  color: #fff;
+
+}
+
+.header::before{
+  content: "";
+  background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: brightness(60%);
+  background-position: 10% 60%;
+}
+
+h1{
+  font-size: 80px;
+  margin-bottom: 0;
+}
+h2{
+font-size: 40px;
+margin-bottom: 0;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+span{
+  font-size: 24px;
+}
+.blogDiv{
+  position: relative;
+  text-align: center;
+  top: 25px;
+}
+
+.authorLink{
+  color:black
+}
+
+.authorLink:hover{
+  color:rgb(9, 110, 110)
+}
+
+p{
+  font-size: 18px;
+  margin-top: 0;
+  color: gray;
+}
+
+.parSpan{
+  font-size: 18px;
+}
+
+.postBox{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.postDiv:hover{
+color:rgb(9, 110, 110);
+cursor:pointer;
+}
+
+/* older post button */
+.oldButton{
+  position: relative;
+  color: black;
+  border: solid black;
+  color: #fff;
+  background-color: #0085A1;
+  border-color: #0085A1;
+  display: inline-block;
+  height: 45px;
+  width: 150px;
+  text-align: center;
+  line-height: 3.5;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.875rem;
+  left: 61%;
+  margin-top: 15px;
+  transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, 
+    border-color 0.15s ease-in-out, 
+    box-shadow 0.15s ease-in-out
+}
+
+.oldButton:hover{
+  background-color: #036477;
+  border-color: #036477;
+  cursor: pointer;
+}
+
+/* footer css  */
+.liIcon{
+  background-color: black;
+  list-style: none;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  margin: 15px;
+}
+.liIcon:hover{
+  background-color: #0085A1;
+  cursor: pointer;
+}
+
+i{
+color:white;
+padding: 18px;
+margin-top: 12px;
+}
+
+.iconDiv{
+position: relative;
+top:25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.iconUl{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-left: 0;
+  position: relative;
+  right: 20px;
+}
+
+footer{
+  height:190px
+}
+
+#tweet{
+  position: relative;
+  right: 5px;
+  }
+#faceBK{
+  position: relative;
+  right:-1px
+  }
+  
+#gitHub{
+  position: relative;
+  right:5px
+  }
+
+  .footHr{
+  padding-left: 25%;
+  padding-right: 25%;
+  }
+
+  .copyrightDiv{
+position: relative;
+right:23px;
+margin-top:0;
+bottom:20px;
+font-style: italic;
+color: grey;
+font-size: 17px;
+  }
+

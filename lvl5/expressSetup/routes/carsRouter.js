@@ -20,17 +20,15 @@ carsRouter.get('/', (req,res,next)=>{
     })
 })
 
-//get one (parameters)// 
-carsRouter.get("/:carId",(req ,res, next )=>{
-const carId = req.params.carId // requesting the parameter with this id
-const foundCar = cars.find(car=> car._id === carId) //looking for the car id in cars array that matches this parameter 
-
-if(!foundCar){//this is for error handling
-    const error = new Error(`The item with id ${carId} was not found`)//the error message 
-    res.status(500)//error statuse code 
-    return next(error)
-}
-res.status(200).send(foundCar) //response is the car matching this id 
+//get one (params)
+carsRouter.get('/:carId',(req,res,next)=>{
+    Car.findById({_id: req.params.carId},(err,item)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(item)
+    })
 })
 
 //get by make (queries) for this ex we are building into a bigger endpoint but this can be built into basic get route "/" //

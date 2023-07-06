@@ -1,0 +1,138 @@
+.locationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    margin-left: 12%;
+}
+
+form > input{
+padding: 10px;
+border: none;
+width: 250px;
+border-radius: 5px;
+}
+
+form > button {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #FFBA49;
+    border: none;
+    width: 250px;
+}
+
+.restaurant{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.305);
+gap: 5px;
+width: 100vw;
+height: 415px;
+border-radius: 5px;
+
+}
+.restaurant > button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFBA49;
+    color: black;
+}
+
+.restaurant > img {
+    border-radius: 5px;
+}
+
+.menu{
+text-decoration: none;
+margin-bottom: 5px;
+color:#FFBA49;
+text-decoration: underline;
+}
+
+.price{
+color:#FFBA49;
+} 
+
+.title{
+margin-top: 7px;
+color: #FFBA49;
+margin-top: 15px;
+}
+
+.foodType{
+    color: #FFBA49;
+    font-weight: normal;
+    text-align: center;
+}
+
+.find-food{
+    margin-top: 25%;
+    text-align: center;
+    background-color: #FFBA49;
+    width: 300px;
+    margin-left: 11%;
+    border-radius: 5px;
+}
+
+.savedErr{
+    color: red;
+}
+
+/* details page  */
+.restaurantDetails{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 13%;
+    margin-left: 5%;
+    justify-content: center;
+    gap: 15px;
+}
+
+.restaurantDetails > h2{
+    font-size: 30px;
+    text-align: center;
+    background-color: #FFBA49;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.restaurantDetails > img{
+margin-left: 5.5%;
+border-radius: 5px;
+}
+
+.priceDetails{
+    margin-top: 5%;
+    font-size: 25px;
+    color: #FFBA49;
+    text-align: center;
+    
+}
+
+.typeFood{
+    font-size: 25px;
+    color: #FFBA49;
+    font-weight: normal;
+    text-align: center;
+}
+
+.menuDetails{
+    font-size: 25px;
+    text-align: center;
+    color: #FFBA49;
+    cursor: pointer;
+}
+
+

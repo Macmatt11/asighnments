@@ -1,0 +1,43 @@
+.commentsDiv{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 3px;
+width: 300px;
+align-items: start;
+overflow:scroll;
+border-radius: 5px;
+height: 75px;
+background-color: rgba(0, 0, 0, 0.305);
+color:#FFBA49 ;
+}
+
+.expandedCommentsDiv{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 3px;
+width: 100vw;
+align-items: start;
+overflow:scroll;
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.836);
+color:#FFBA49 ;
+position: absolute;
+margin-top: 560px;
+max-height: 270px;
+overflow: auto;
+}
+
+.commentBox{
+text-align: left;
+font-size: 20px;
+padding: 5px;
+    }
+
+.likeIconComment{
+padding: 5px;
+}
+.dislikeIconComment{
+padding: 5px;
+}

@@ -1,0 +1,52 @@
+/* navbar css  */
+.navbarImg{
+    height: 50px;
+    width: 90px;
+    margin-right: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 55px;
+    background-color: #F3F3F4;
+    
+}
+
+.link{
+text-decoration: none;
+line-height: 3;
+padding: 9px;
+margin-right: 3%;
+color: #d00621;
+font-size: 12px;
+line-height: 4;
+}
+
+.link:hover{
+background-color: #d00621;
+color: #F3F3F4;
+border-radius: 3px;
+
+}
+
+nav{
+    width: 300px;
+    text-align:right;
+}
+
+.title{
+    margin-right: auto;
+    position: relative;
+    bottom: 10px;
+    margin-left: 0;
+    right: 1%;
+    font-size: 13px;
+    line-height: 4;
+
+}
+span{
+    color: #d00621;
+    margin:0
+}

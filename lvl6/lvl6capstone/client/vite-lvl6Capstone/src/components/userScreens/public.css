@@ -1,0 +1,98 @@
+
+/* public css */
+.publicContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.postPublic{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.305);
+gap: 5px;
+width: 100vw;
+height: 650px;
+border-radius: 5px;
+padding: 7px;
+}
+
+.publicFeed{
+    margin-top: 25%;
+    text-align: center;
+    background-color: #FFBA49;
+    width: 300px;
+    margin-left: 11%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+.postPublic > img { 
+    height: 40vh;
+    width: 90vw;
+}
+
+.postTitle{
+font-size: 25px;
+color: #FFBA49;
+}
+
+.postPublic > p {
+color: #FFBA49;
+font-size: 17px;
+max-height: 60px;
+overflow: auto;
+}
+
+.likeIcon{
+top: 3px;
+position: relative;
+right: 20%;
+color: #FFBA49;
+font-size: 20px;
+}
+
+.dislikeIcon{
+position: relative;
+bottom: 24px;
+color: #FFBA49;
+font-size: 20px;
+}
+
+.comment{
+position: relative;
+left: 19%;
+bottom: 52px;
+font-size: 20px;
+color: #FFBA49;
+margin-bottom: 0;
+}
+
+.commentForm{
+margin-right: 10%;
+margin-bottom: -5%;
+margin-top: 0;
+position: relative;
+bottom: 30px;
+}
+.commentForm > button{
+    width: 70px;
+    margin-bottom: 0;
+}
+
+.commentSection{
+    color: #FFBA49;
+    margin-top: 0;
+}
+
+.expandPublic{
+color: #FFBA49;
+position: relative;
+left: 20%;
+bottom: 28px;
+font-size: 24px;
+}
+

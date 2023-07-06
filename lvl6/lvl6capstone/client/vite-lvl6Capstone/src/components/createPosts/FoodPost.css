@@ -1,0 +1,16 @@
+.foodFormContainer{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 2.5%;
+}
+
+.foodFormContainer > h3{
+    margin-bottom: 15%;
+    text-align: center;
+    margin-left: 22%;
+    background-color: #FFBA49;
+    padding: 5px;
+}

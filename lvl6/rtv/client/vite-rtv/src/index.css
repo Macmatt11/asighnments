@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* navbar  */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color:#201E1F;
+    height: 50px;
+    line-height: 4;
+}
+
+.links{
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.logout-icon{
+    color: white;
+    margin-top: 20px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.logout-icon:hover{
+    color:#3587a4;
+}
+.links:hover{
+    color:#3587a4;
+}
+
+.issueMinder{
+    color: white;
+    position: relative;
+    right: 73%;
+    bottom: 28px;
+}
+.issueMinder:hover{
+    color:#3587a4;
+}
+
+/* issue */
+.issueProfile{
+    position: relative;
+    margin-bottom: 8px;
+    height: auto;
+    width: 850px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 87px);
+    background-color: #201E1F;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.596) 0px 22px 70px 4px;
+    color: white;
+}
+
+.issue-list{
+    grid-row: 2/auto;
+    grid-column: 2/-1;
+}
+
+/* profile */
+.profileContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+}
+
+.welcome{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    line-height: 4;
+    margin-left: 10%;
+}
+.post-new{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 10%;
+}
+.issueForm{
+    grid-row: 3/6;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 5%;
+    position: relative;
+    bottom: 25%;
+}
+
+.myPosts{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: end;
+    position: relative;
+    left: 14%;
+    line-height: 4;
+    font-size: 20px;
+    text-decoration: underline
+}
+
+.comment{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    position: relative;
+    left: 25%;
+    top: 5px;
+    cursor: pointer;
+}
+
+.delete{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    position: relative;
+    left: 35%;
+    top: 5px;
+    cursor: pointer;
+}
+
+.likeIcon{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    position: relative;
+    top: 5px;
+    right: 1%;
+    cursor: pointer;
+}
+
+.dislikeIcon{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    position: relative;
+    left: 12%;
+    top: 5px;
+    cursor: pointer;
+}
+
+.issueImg{
+    grid-column: 1/3;
+    position: relative;
+    left: 4%;
+    bottom: 25px;
+}
+.issueDescription{
+    grid-column: 3/-1;
+    grid-row: 2/4;
+    margin-right: 12%;
+    overflow-y: scroll;
+}
+.issueDescription::-webkit-scrollbar {
+    width: 8px;
+}
+.issueTitle{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    position: relative;
+    left: 4%;
+    top: 7px;
+}
+/* comment section */
+textarea{
+    resize: none;
+}
+.commentForm{
+    grid-column: 1/2;
+    grid-row: 4/4;
+    position: relative;
+    top: 30px;
+    left: 10%;
+}
+
+.postComment{
+    position: relative;
+    left: 97%;
+    bottom: 25px;
+}
+
+.commentsDiv {
+    display: none;
+}
+
+.expanded {
+    height: auto; /* Adjust the desired expanded height */
+    z-index: 999; /* Higher z-index to display above other elements */
+    width: 300px;
+    transition: height 0.5s ease; /* Smooth transition */
+    z-index: 1; /* Initial z-index */
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    background-color:#201e1fba;
+    color: white;
+}
+
+.commentSection{
+    grid-column: 3/4;
+    grid-row: 4/-1;
+    position: relative;
+    top: 25%;
+    text-decoration: underline;
+}
+
+.deleteComment{
+    cursor: pointer;
+    position: relative;
+    top: 3px
+}
+.deleteComment:hover{
+    color: red
+}
+.expand{
+    grid-column: 3/4;
+    grid-row: 4/-1;
+    position: relative;
+    left: 35%;
+    top: 32%;
+}
+
+/* public page  */
+.issuePublic{
+    position: relative;
+    margin-bottom: 8px;
+    height: auto;
+    width: 850px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 87px);
+    right: 9%;
+    background-color: #201E1F;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.596) 0px 22px 70px 4px;
+    color: white;
+}
+
+.publicContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px;
+}
+
+.publicFeed{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: relative;
+    bottom: 20%;
+    right: 27%;
+}
+
+/* login */
+.auth-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-auto-rows: 100px;
+}
+.authForm{
+grid-column: 2/3;
+grid-row: 3/6;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 15px;
+background-color: #201E1F;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.596) 0px 22px 70px 4px;
+}
+
+.title{
+grid-column: 2/3;
+grid-row: 2/2;
+text-align: center;
+text-decoration: underline;
+position: relative;
+top: 90%;
+line-height: 5;
+color: white;
+}
+.member{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    position: relative;
+    top: 8px;
+    text-align: center;
+    color: white;
+}
+.member:hover{
+    color:#3587a4;
+}
+
+.authForm button{
+    padding: 5px;
+    border: none;
+    border-radius: 5%;
+    width: 90px;
+}
+
+.authForm button:hover{
+    background-color: #3587a4;
+    color: white;
+}
+
+.authForm input{
+    padding: 5px;
+    width: 200px;
+    border: none;
+}
+
+.errMsg{
+    position: relative;
+    top: 15%;
+    font-size: 17px;
+}

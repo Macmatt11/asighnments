@@ -52,7 +52,8 @@ function saveThingEdit(index) {
                 <div>
                     <input type="text" onChange={(e)=>setEditTitle(e.target.value)} value ={editTitle} placeholder="Title" className="title"/>
                     <input type="text" onChange={(e)=>setDescription(e.target.value)} value ={editDescription} placeholder="Description" className="desctiption"/>
-                </div>:
+                </div>
+                :
                 <div>
                     <h2>{thing.title}</h2>
                     <p>{thing.description}</p>

@@ -28,7 +28,7 @@ export default function Exercise(){
 function saveToMyWorkouts(exercise,id){ //takes in an exercise object and an id, adds the exercise to the myWorkouts state, and then deletes the corresponding exercise from the list of added exercises (which is stored in the component's state) using the handleDelete function.
     setMyWorkouts(prev => [...prev, exercise])
     handleDelete(id)
-}
+} 
 
 const navigate = useNavigate();
 

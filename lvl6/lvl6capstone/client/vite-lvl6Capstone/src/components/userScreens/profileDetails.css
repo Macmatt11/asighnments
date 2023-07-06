@@ -1,0 +1,84 @@
+.detailsContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.305);
+    gap: 5px;
+    margin-bottom: 60px;
+    height: 700px;
+    
+}
+
+.postDetailsImg{
+height: 40vh;
+width: 90vw;
+}
+
+.postDetailsTitle{
+    color: #FFBA49;
+}
+.detailsP{
+    color: #FFBA49;
+    font-size: 17px;
+    max-height: 70px;
+    overflow: auto;
+}
+
+.likeDetailsIcon{
+    color: #FFBA49;
+    font-size: 20px;
+    position: relative;
+    right: 23%;
+}
+.dislikeDetailsIcon{
+    color: #FFBA49;
+    font-size: 20px;
+    position: relative;
+    bottom: 27px;
+    right: 8%;
+}
+.deleteDetails{
+    color: #FFBA49;
+    font-size: 20px;
+    position: relative;
+    bottom: 56px;
+    left: 8%;
+}
+.detail-comment{
+    color: #FFBA49;
+    font-size: 20px;
+    position: relative;
+    bottom: 79px;
+    left: 23%;
+}
+
+.detailsContainer > form{
+    position: relative;
+    bottom: 55px;
+}
+.detail-commentSection{
+    color: #FFBA49;
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+}
+.expandDetailPage{
+    position: relative;
+    left: 19%;
+    bottom: 33px;
+    color: #FFBA49;
+}
+
+.backBtn{
+    padding: 10px;
+    background-color: #FFBA49;
+    border-radius: 7px;
+    
+}
+
+.profilePic{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}

@@ -74,3 +74,7 @@
   .submit-btn:hover{
     background-color: #2EC4B6;
   }
+
+  .filter-form{
+    width: 200px
+  }

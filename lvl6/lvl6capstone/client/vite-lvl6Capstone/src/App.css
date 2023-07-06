@@ -1,0 +1,12 @@
+.main-title{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 1.5;
+    position: fixed;
+    width: 100vw;
+    font-family: cursive;
+    top: 0;
+    z-index: 9999
+}

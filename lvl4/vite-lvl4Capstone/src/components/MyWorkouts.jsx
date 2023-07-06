@@ -37,7 +37,7 @@ export default function MyWorkouts(){
 
     return(
         <div className="myWorkoutsContainer"> 
-        <h2 className="mainTitle">My <span>Workouts</span></h2>
+        <h2 className="mainTitle">My<span>Workouts</span></h2>
         {savedElements}
         <button className="homeBtn" onClick={()=> navigate('/')}>Home</button>
         <button className="backBtn" onClick={()=> navigate(-1)}>Back</button>

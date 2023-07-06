@@ -7,7 +7,7 @@ import MyWorkoutDetails from './components/MyWorkoutDetails'
 import MyWorkouts from './components/MyWorkouts'
 import Login from './components/Login'
 import { BrowserRouter as Router,Routes,Route, Link} from 'react-router-dom'
-import dumbbell1 from "./dumbbell1.png"
+import NavBar from './components/Nav/Navbar'
 
 
 function App() {
@@ -15,24 +15,7 @@ function App() {
 
   return (
     <Router className='container' >
-      <header>
-            <img src={dumbbell1} className='navbarImg'/>
-            <h2 className='title'>Workout <span>Hub</span></h2>
-            <nav>
-              <Link to= "/" className= "link">
-              Home
-              </Link>
-              <Link to= '/exercises' className='link'>
-              Add Exercises
-              </Link>
-              <Link to= '/myWorkouts' className='link'>
-              My Workouts 
-              </Link>
-              <Link to= '/login' className='link'>
-              Login
-              </Link>
-            </nav>
-        </header>
+      <NavBar/>
       <Routes>
         <Route path= '/' element = {<Home/>} />
         <Route path= '/exercises' element = {<Exercise/>} />
@@ -40,7 +23,6 @@ function App() {
         <Route path= '/login' element = {<Login/>}/>
         <Route path= '/myWorkouts/:myWorkoutId' element = {<MyWorkoutDetails/>} />
       </Routes>
-        <Footer/>
     </Router>
 
   )

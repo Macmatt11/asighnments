@@ -14,7 +14,7 @@ export default function Cars(props){
         <h1>Make: {car.make}</h1>
         <h2>Model: {car.model}</h2>
         <button className='delete-btn' onClick={()=> props.deleteCar(car._id)}>
-            Delete</button>
+        Delete</button>
         <button className='edit-btn' 
         onClick={()=>setEditToggle(prevToggle => !prevToggle)}>Edit</button>
         </>

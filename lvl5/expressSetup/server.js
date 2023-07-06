@@ -24,6 +24,7 @@ app.use(morgan('dev'))//console logs requests and errors to console on every req
 //connect mongoose 
 mongoose.set('strictQuery', true)//needed if not using v7
 mongoose.connect(process.env.MONGO_URL, () => console.log('connected to mongodb database')) 
+
 //routes//
 app.use("/api/cars", require("./routes/carsRouter.js"))
 

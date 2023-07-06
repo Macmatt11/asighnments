@@ -1,0 +1,22 @@
+
+.authForm{
+    position: absolute;
+    top: 25%;
+}
+
+.member{
+    position: absolute;
+    top:47%;
+    left: 30%;
+    text-align: center;
+    color: #FFBA49;
+}
+
+.member1{
+    position: absolute;
+    top: 47%;
+    left: 35%;
+    text-align: center ;
+    color: #FFBA49;
+}
+

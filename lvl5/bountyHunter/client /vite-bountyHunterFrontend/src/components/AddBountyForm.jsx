@@ -6,8 +6,8 @@ export default function AddBountyForm(props){
     const defaultState = {
         firstName:props.firstName || '', 
         lastName:props.lastName || '', 
-        living:props.living || true, 
-        bounty: props.bounty || 5000,
+        living:props.living || null, 
+        bounty: props.bounty || null,
         type: props.type || ''
     }
     const [inputData, setInputData] = React.useState(defaultState)
@@ -32,7 +32,7 @@ export default function AddBountyForm(props){
         <form onSubmit={handleSubmit}>
             <input name="firstName" value={inputData.firstName} onChange={handleChange} placeholder="First Name"/>
             <input name="lastName" value={inputData.lastName} onChange={handleChange} placeholder="Last Name"/>
-            <input name="living" value={inputData.living} onChange={handleChange} placeholder="Living"/>
+            <input name="living" value={inputData.living} onChange={handleChange} placeholder="Living: True or False"/>
             <input name="bounty" value={inputData.bounty} onChange={handleChange} placeholder="Bounty" type="number"/>
             <input name="type" value={inputData.type} onChange={handleChange} placeholder="Type: Jedi or Sith"/>
             <button className="submit-btn">{props.btnText}</button>

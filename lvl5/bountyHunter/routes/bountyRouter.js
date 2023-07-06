@@ -1,81 +1,92 @@
 const express = require('express')
 const bountyRouter = express.Router()
-const {v4: uuidv4} = require("uuid")
-
-
-//fake data//
-const bounties = [
-    {
-        firstName: "Mace",
-        lastName: "Windu",
-        living: false,
-        bounty: 3000,
-        type: "Jedi",
-        _id: uuidv4()
-    },
-    {
-        firstName: "Darth ",
-        lastName: "Sidious",
-        living: false,
-        bounty: 93000,
-        type: "sith",
-        _id: uuidv4()
-    },
-    {
-        firstName: "Darth",
-        lastName: "Tyranus",
-        living: false,
-        bounty: 33000,
-        type: "sith",
-        _id: uuidv4()
-    }
-]
+const Bounty = require('../models/bounty.js')
 
 
 //route//
 
 //get all
-bountyRouter.get( "/",(req,res)=>{ //responding with data 
-    res.send(bounties)
+bountyRouter.get( "/",(req,res,next)=>{ //responding with data 
+    Bounty.find((err,bounties)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(bounties)
+    })
 })
 
 //get one (parameter)
-bountyRouter.get("/:bountyId",(req,res)=>{
-    const bountyId = req.params.bountyId
-    const foundBounty = bounties.find(bounty => bounty._id === bountyId)
-    res.send(foundBounty)
+bountyRouter.get("/:bountyId",(req,res,next)=>{
+    Bounty.findById({_id: req.params.bountyId}, (err,bounty)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(bounty)
+    })
 })
 
 //get w/queries filter 
-bountyRouter.get("/search/firstName", (req,res)=> {
-    const firstName = req.query.firstName
-    const filteredBounty = bounties.filter(bounty => bounty.firstName === firstName)
-    res.send(filteredBounty)
+
+bountyRouter.get("/search/living", (req,res,next)=> {
+    Bounty.find({living: req.query.living},(err,bounty)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(bounty)
+    })
 })
 
-//post 
-bountyRouter.post("/",(req,res)=>{
-    const newBounty = req.body
-    newBounty._id = uuidv4()
-    bounties.push(newBounty)
-    res.send(newBounty)//<---changed to newBounty so that it can be saved into state and appear onto the dom
+bountyRouter.get("/search/type", (req,res,next)=> {
+    Bounty.find({type: req.query.type},(err,bounty)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(bounty)
+    })
+})
+
+
+//post w/mongoDB
+bountyRouter.post("/",(req,res,next)=>{
+    const newBounty = new Bounty(req.body)
+    newBounty.save((err,savedBounty)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(201).send(savedBounty)
+    })
 })
 
 //delete
-bountyRouter.delete("/:bountyId", (req,res)=>{
-    const bountyId = req.params.bountyId
-    const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
-    bounties.splice(bountyIndex,1)
-    res.send("successfully deleted bounty")
+bountyRouter.delete("/:bountyId", (req,res,next)=>{
+    Bounty.findOneAndDelete({_id: req.params.bountyId},(err,deletedBounty)=>{
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send(`Successfully deleted ${deletedBounty.firstName} ${deletedBounty.lastName}`)
+    })
 })
 
 //put(edit)
-bountyRouter.put("/:bountyId", (req,res)=>{
-    const bountyId = req.params.bountyId
-    const updatedObj = req.body 
-    const bountyIndex = bounties.findIndex(bounty=> bounty._id === bountyId)
-    const updatedBounty = Object.assign(bounties[bountyIndex], updatedObj)
-    res.send(updatedBounty)
+bountyRouter.put("/:bountyId", (req,res,next)=>{
+    Bounty.findOneAndUpdate(
+        {_id: req.params.bountyId},
+        req.body,
+        {new:true},
+        (err,updatedBounty)=>{
+            if(err){
+                res.status(500)
+                return nexy(err)
+            }
+            return res.status(201).send(updatedBounty)
+        }
+    )
 })
 
 

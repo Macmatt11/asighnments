@@ -1,0 +1,59 @@
+.profileContainer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 90px;
+}
+
+.user{
+    color: #FFBA49;
+    grid-row: 1/2;
+    margin-top: 55px;
+}
+
+.myPosts{
+    color: #FFBA49;
+    grid-row: 3/4;
+    text-align: center;
+    position: relative;
+    top: 65px;
+}
+
+.userPosts{
+    background-color:rgba(0, 0, 0, 0.305);
+    grid-row: 4/9;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: 110px;
+    overflow: scroll;
+}
+
+
+/* profile */
+.postProfile > h1{
+display: none;
+}
+.postProfile > p{
+display: none;
+}
+.postProfile > span{
+    display: none;
+}
+.postProfile .comment{
+    display: none;
+}
+.postProfile{
+    width: 90px;
+    background-color:rgba(0, 0, 0, 0.305);
+    height: 115px;
+}
+
+.postProfile > .commentSection, .commentsDiv, .delete, .expand{
+    display: none;
+}
+
+.postImg{
+height: 115px;
+width: 95px;
+margin-top: 1px;
+}
+

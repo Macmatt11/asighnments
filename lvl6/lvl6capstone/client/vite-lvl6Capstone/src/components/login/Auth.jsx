@@ -3,6 +3,7 @@ import './Auth.css'
 import AuthForm from './AuthForm'
 import { UserContext } from '../../context/UserProvider'
 
+
 export default function Auth(){
 const {signup, login, resetAuthErr, errMsg }= React.useContext(UserContext)
 

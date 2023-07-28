@@ -75,6 +75,7 @@ console.log(restaurants)
 
 //state for err msg if reastauarant is added to addedRestaurants array already 
 const [duplicateRestaurantId, setDuplicateRestaurantId] = React.useState(null);
+
 //add restaurant to added restaurant list 
 function addToMyRestaurants(restaurant) {
 //getting existing restaurants from localstorage if they exist or [] if they dont
@@ -95,7 +96,7 @@ const restaurantElements = restaurants.map(restaurant=>(
     <div key={restaurant.restaurantsId} className='restaurant' id='restaurant'>
         <h3 className='title'>{restaurant.name}</h3>
         <Link to={`/locationForm/${restaurant.restaurantsId}`}>
-            <img src={restaurant.heroImgUrl} style={{height: '30vh', width: '70vw'}}/>
+            <img className='imgLocation' src={restaurant.heroImgUrl}/>
         </Link>
         <h4 className='foodType'>Type: {restaurant.establishmentTypeAndCuisineTags.length > 1 ? 
                 restaurant.establishmentTypeAndCuisineTags.join(' '): restaurant.establishmentTypeAndCuisineTags}</h4>
@@ -110,7 +111,7 @@ const restaurantElements = restaurants.map(restaurant=>(
 return (
     <div className='locationContainer'>
         <h1 className='find-food'>Find Some Food!</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='locationForm'>
             <input
             name="city"
             value={location.city}

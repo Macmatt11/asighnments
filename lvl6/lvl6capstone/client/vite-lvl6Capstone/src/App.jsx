@@ -3,7 +3,7 @@ import LocationForm from './components/locationComponents/LocationForm'
 import { BrowserRouter as Router,Routes,Route, Navigate} from 'react-router-dom'
 import LocationFormItemDetails from './components/locationComponents/LocationFormItemDetails'
 import Auth from './components/login/Auth'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
 import { UserContext } from './context/UserProvider'
 import React from 'react'
 import AddedRest from './components/addedRestaurants/AddedRest'
@@ -13,6 +13,7 @@ import FoodPostForm from './components/createPosts/FoodPostForm'
 import ProtectedRoutes from './ProtectedRoutes'
 import ProfileDetails from './components/userScreens/ProfileDetails'
 import AddedDetails from './components/addedRestaurants/AddedDetails'
+import Navbar2 from './components/navbar/Navbar2'
 
 
 function App() {
@@ -20,7 +21,8 @@ const {token, logout}=React.useContext(UserContext)
 
   return (
     <Router>
-    <h1 className='main-title'>MunchQuest</h1>
+      <h1 className='main-title'>MunchQuest</h1>
+      {token && <Navbar2 logout={logout}/>}
       <Routes>
         <Route path='/' element={token ? <Navigate to='/profile'/> : <Auth/>}/>
 

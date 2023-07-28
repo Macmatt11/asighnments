@@ -9,8 +9,8 @@ import './navbar.css'
 export default function Navbar(props){
     const {logout} = props
     return(
+        
         <div className='navbar'>
-            {/* <Link className='link' to='/'>Login</Link> */}
             <Link className='link'  to= '/locationForm' ><MdSearch/></Link>
             <Link className='link'  to= '/addedRestaurants'><MdRestaurantMenu/></Link>
             <Link className='link'  to = '/public'><MdPublic/></Link>

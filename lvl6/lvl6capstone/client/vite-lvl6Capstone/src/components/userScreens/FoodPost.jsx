@@ -14,23 +14,6 @@ export default function FoodPost(props){
     const {foodPosts, deletePost, isPublicPage, isProfilePage} = props
     const{addComment, commentsData, upVote, downVote, showCommentsForPosts, setShowCommentsForPosts, toggleComment} = React.useContext(UserContext)
 
-    // //commentsform state 
-    // const [showCommentsForPosts, setShowCommentsForPosts] = React.useState([]);
-    // //toggle commentform
-    // function toggleComment(foodPostId) {
-    //     setShowCommentsForPosts(prev => {
-    //         const exists = prev.some(id => id === foodPostId);// line checks if the foodPostId already exists in the showCommentsForPosts.
-    //         //the some() method is used to iterate over the array and returns true if any element matches the condition (id === foodPostId).
-    //         if (exists) {//If the foodPostId already exists
-    //         return prev.filter(id => id !== foodPostId);//we want to remove the foodPostId from the showCommentsForPosts array. The filter() method is used to create a 
-    //         //new array with all the elements that do not match the condition (id !== foodPostId).
-    //         } else {
-    //         return [...prev, foodPostId];
-    //         }//we want to add the foodPostId to the showCommentsForPosts array. The spread operator ... is used to create a new array that includes all 
-    //         //the elements from the previous state (prev), and foodPostId is appended to the end
-    //     });
-    //     }
-
         const[showDiv, setShowDiv] = React.useState(false)
         
         function toggleClassName(){
@@ -48,6 +31,7 @@ const foodPostElements = foodPosts.map(foodPost=>(
         }
     <h1 className="postTitle"> {foodPost.restaurantName}</h1>
     <p>{foodPost.description}</p>
+    <div className="iconBox">
     <span className='likeIcon'>{foodPost.likes.length}<AiOutlineLike onClick={()=>upVote(foodPost._id)}/></span>
     <span className='dislikeIcon'>{foodPost.dislikes.length}<AiOutlineDislike  onClick={()=>downVote(foodPost._id)}/></span>
     {!isPublicPage && <RiDeleteBinLine className='delete' onClick={()=>deletePost(foodPost._id)}/>}
@@ -56,12 +40,18 @@ const foodPostElements = foodPosts.map(foodPost=>(
     :
     <FaRegComment className='comment' onClick={() => toggleComment(foodPost._id)} />
     }
+    </div>
+    
     {showCommentsForPosts.includes(foodPost._id) && (
         <CommentForm addComment={addComment} foodPostId={foodPost._id} className="commentForm"
         setShowCommentsForPosts={setShowCommentsForPosts}
         />
     )}
-    <h3 className='commentSection'>Comments</h3> <MdOutlineExpandMore className={!isProfilePage ? 'expandPublic' : 'expand' } onClick={()=>toggleClassName(foodPost._id)}/>
+    <div className="comment-expandBox">
+    <h3 className='commentSection'>Comments</h3> 
+    <MdOutlineExpandMore className={!isProfilePage ? 'expandPublic' : 'expand' } onClick={()=>toggleClassName(foodPost._id)}/>
+    </div>
+    
     <Comment 
     foodPostId = {foodPost._id}
     commentsData={commentsData}

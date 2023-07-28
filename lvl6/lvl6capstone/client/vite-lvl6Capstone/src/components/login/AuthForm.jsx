@@ -13,12 +13,14 @@ export default function AuthForm(props){
         }} = props
     return(
         <form onSubmit={handleSubmit} className="authForm">
+            <h1 className='loginTitle'>MunchQuest</h1>
             <input
             type="text"
             value={username}
             name="username"
             onChange={handleChange}
             placeholder="Username"
+            className='login-inputs'
             />
             <input
             type="email"
@@ -26,6 +28,7 @@ export default function AuthForm(props){
             name="email"
             onChange={handleChange}
             placeholder="Email"
+            className='login-inputs'
             />
             <input
             type="password"
@@ -33,8 +36,9 @@ export default function AuthForm(props){
             name="password"
             onChange={handleChange}
             placeholder="Password"
+            className='login-inputs'
             />
-            <button>{btnTxt}</button>
+            <button className='login-btn'>{btnTxt}</button>
             <p style={{color: 'red'}} className="errMsg">{errMsg}</p>
         </form>
     )

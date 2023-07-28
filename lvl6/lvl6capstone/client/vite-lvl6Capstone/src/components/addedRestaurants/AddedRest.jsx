@@ -29,7 +29,7 @@ const addedRestaurantElements = addedRestaurant.map(restaurant=>(
     <div key={restaurant.restaurantsId} className="addedItemBox">
             <h3>{restaurant.name}</h3>
             <Link to={`/addedRestaurants/${restaurant.restaurantsId}`}>
-            <img src={restaurant.heroImgUrl} style={{height: '30vh', width: '70vw'}} className="itemImg"/>
+            <img src={restaurant.heroImgUrl} className="addedItemImg"/>
             </Link>
             <h4 className='foodType'>Type: {restaurant.establishmentTypeAndCuisineTags.length > 1 ? 
                 restaurant.establishmentTypeAndCuisineTags.join(' '): restaurant.establishmentTypeAndCuisineTags}</h4>
@@ -49,7 +49,7 @@ const addedRestaurantElements = addedRestaurant.map(restaurant=>(
             :
             <div className="pizzaImg">
             <h1 className="spots">No Spots Yet <PiSmileySadLight className="sadFace"/></h1>
-            <img src='https://img.freepik.com/free-vector/flying-slice-pizza-cartoon-vector-illustration-fast-food-concept-isolated-vector-flat-cartoon-style_138676-1934.jpg?w=2000' style={{height: '30vh', width: '70vw'}} />
+            <img src='https://img.freepik.com/free-vector/flying-slice-pizza-cartoon-vector-illustration-fast-food-concept-isolated-vector-flat-cartoon-style_138676-1934.jpg?w=2000'/>
             </div>
             }
             <button className="goBackBtn" onClick={() => navigate(-1)}>Back</button>

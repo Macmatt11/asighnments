@@ -30,11 +30,11 @@ export default function LocationFormItemDetails(){
     return(
         <div className='restaurantDetails'>
                 <h2>{foundRestaurant.name}</h2>
-                <img src={foundRestaurant.heroImgUrl} style={{height: '40vh', width: '80vw'}}/>
+                <img className='detailImg' src={foundRestaurant.heroImgUrl}/>
                 <span className='priceDetails'>Price: {foundRestaurant.priceTag}</span><h4 className='typeFood'>Type: {foundRestaurant.establishmentTypeAndCuisineTags.length > 1 ? 
                 foundRestaurant.establishmentTypeAndCuisineTags.join(' '): foundRestaurant.establishmentTypeAndCuisineTags}</h4>
                 {foundRestaurant.menuUrl !== null && <a className='menuDetails' href={foundRestaurant.menuUrl}>See Menu</a>}
-                <button className="goBackBtn" onClick={() => navigate(-1)}>Back</button>
+                <button className="goBackBtn1" onClick={() => navigate(-1)}>Back</button>
         </div>
     )
 }

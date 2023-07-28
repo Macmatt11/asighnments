@@ -29,7 +29,7 @@ export default function AddedDetails(){
     return(
         <div className='addedDetailsContainer'>
                 <h2 className='addedName'>{foundRestaurant.name}</h2>
-                <img className= 'addedImg' src={foundRestaurant.heroImgUrl} style={{height: '40vh', width: '80vw'}}/>
+                <img className= 'addedImg' src={foundRestaurant.heroImgUrl}/>
                 <span className='priceDetailsAdded'>Price: {foundRestaurant.priceTag}</span>
                 <h4 className='typeFoodAdded'>Type: {foundRestaurant.establishmentTypeAndCuisineTags.length > 1 ? 
                 foundRestaurant.establishmentTypeAndCuisineTags.join(' '): foundRestaurant.establishmentTypeAndCuisineTags}</h4>

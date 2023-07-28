@@ -35,7 +35,7 @@ const {restaurantName, description,imgUrl} = inputs
 
     return(
         <div className="foodFormContainer">
-            <h3>Tell Us About a Spot:</h3>
+            <h3 className="spot">Tell Us About a Spot:</h3>
             <form onSubmit={handleSubmit} className='foodPostForm'>
                 <input 
                 type="text" 
@@ -43,7 +43,7 @@ const {restaurantName, description,imgUrl} = inputs
                 value={restaurantName} 
                 onChange={handleFoodPostChange} 
                 placeholder="Restaurant"
-                style={{width: "250px"}}
+                className="restName"
                 />
                 <input
                 type="text" 
@@ -51,23 +51,17 @@ const {restaurantName, description,imgUrl} = inputs
                 value={imgUrl}
                 onChange={handleFoodPostChange} 
                 placeholder="Add Image Url"
-                style={{width: "250px"}}
+                className="userImg"
                 />
-                {/* <FileBase64
-                multiple={ false }
-                onDone={({base64})=>setInputs(prevInputs => ({
-                    ...prevInputs,
-                    imgFile: base64
-                }))} /> */}
                 <textarea 
                 type="text" 
                 name="description" 
                 value={description} 
                 onChange={handleFoodPostChange} 
                 placeholder="Tell us about this Restaurant"
-                style={{width: "250px", height: "150px"}}
+                className="userTxt"
                 />
-                <button  style={{width: "250px", height: "30px"}}>Create Post</button>
+                <button className="createpost-btn">Create Post</button>
             </form>
         </div>
     )
